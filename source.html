@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sort and Filter</title>
+    <style>
+        table
+        {
+            border-collapse: collapse;
+            width: 40%;
+        }
+
+        table td, table th
+        {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th
+        {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table id = "table">
+    </table>
+    <form>
+        <label>
+            First sorting level
+            <select name = "sort" onchange="getActualOptions()">
+                <option value = "no"> No </option>
+                <option value = "legionNumber"> Legion number </option>
+                <option value = "legionName"> Legion name </option>
+                <option value = "primarch"> Primarch </option>
+                <option value = "loyalty"> Loyalty </option>
+            </select>
+        </label>
+        <label>
+            Second sorting level
+            <select name = "sort" onchange="getActualOptions()">
+                <option value = "no"> No </option>
+                <option value = "legionNumber"> Legion number </option>
+                <option value = "legionName"> Legion name </option>
+                <option value = "primarch"> Primarch </option>
+                <option value = "loyalty"> Loyalty </option>
+            </select>
+        </label>
+        <label>
+            Third sorting level
+            <select name = "sort" onchange="getActualOptions()">
+                <option value = "no"> No </option>
+                <option value = "legionNumber"> Legion number </option>
+                <option value = "legionName"> Legion name </option>
+                <option value = "primarch"> Primarch </option>
+                <option value = "loyalty"> Loyalty </option>
+            </select>
+        </label>
+        <br>
+        <input type = "button" value = "Sort" id = "sortButton">
+        <br>
+        <label>
+            Legion name:
+            <input type = "textbox" name = "filter">
+        </label>
+        <label>
+            Primarch:
+            <input type = "textbox" name = "filter">
+        </label>
+        <br>
+        <input type = "button" value = "Filter" id = "filterButton">
+    </form>
+</body>
+<footer>
+    <script src = "script.js">
+    </script>
+</footer>
+</html>
